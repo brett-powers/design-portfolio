@@ -8,3 +8,13 @@
   --color-black: #030303;
   --color-medium-brown: #7a746e;
 }
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'plus jakarta sans';
+}
