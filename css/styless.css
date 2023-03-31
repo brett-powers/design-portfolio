@@ -80,3 +80,63 @@ h5 {
 a {
   text-decoration: none;
 }
+
+/* Buttons */
+.btn {
+  align-items: center;
+  border-radius: 30px;
+  color: #fff;
+  display: flex;
+  font-size: 1.4rem;
+  height: 44px;
+  justify-content: center;
+  width: 176px;
+}
+
+.btn,
+.btn--arrow {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.btn--primary {
+  background: var(--color-black);
+}
+
+.btn--primary:hover {
+  background: var(--color-galactic-blue);
+}
+
+.btn--secondary {
+  background: var(--color-light-red);
+}
+
+.btn--secondary:hover {
+  background: var(--color-summer-yellow);
+}
+
+.btn--arrow-container {
+  display: flex;
+  gap: 16px;
+}
+
+.btn--arrow {
+  background: var(--color-black);
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+
+.btn--arrow:hover {
+  background: var(--color-galactic-blue);
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.6rem;
+    height: 56px;
+    width: 228px;
+  }
+}
