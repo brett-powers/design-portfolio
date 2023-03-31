@@ -69,3 +69,14 @@ h5 {
     font-size: 4rem;
   }
 }
+
+/* Lists */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
