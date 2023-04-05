@@ -9,6 +9,12 @@
   --color-medium-brown: #7a746e;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -138,5 +144,27 @@ a {
     font-size: 1.6rem;
     height: 56px;
     width: 228px;
+  }
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+.grid--1x2 {
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 768px) {
+  .grid--3x3 {
+    grid-template-columns: 333px 155px 155px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--2x4 {
+    grid-template-columns: 354px 164px 164px 354px;
   }
 }
