@@ -9,6 +9,12 @@
   --color-medium-brown: #7a746e;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
