@@ -107,6 +107,11 @@ a {
   transition: background 0.3s;
 }
 
+.btn--arrow-container {
+  display: flex;
+  gap: 16px;
+}
+
 .btn--primary {
   background: var(--color-black);
 }
@@ -121,11 +126,6 @@ a {
 
 .btn--secondary:hover {
   background: var(--color-summer-yellow);
-}
-
-.btn--arrow-container {
-  display: flex;
-  gap: 16px;
 }
 
 .btn--arrow {
@@ -171,44 +171,18 @@ a {
 
 /* Carousel */
 .carousel-wrapper {
+  width: 400px;
   overflow: hidden;
-  width: 90%;
 }
 
 .carousel {
-  transform-style: preserve-3d;
+  display: flex;
+  transition: transform 0.5s;
 }
-
-.carousel__image {
-  width: 100%;
-  position: absolute;
-  padding: 1rem 4rem;
-  top: 0;
-  opacity: 0;
-  margin: auto;
-  z-index: 100;
-}
-
-.carousel__image.initial,
-.carousel__image.active {
-  position: relative;
-  opacity: 1;
-  z-index: 900;
-}
-
-.carousel__image.prev,
-.carousel__image.next {
-  z-index: 800;
-}
-
-.carousel__image.prev {
-  transform: translateX(-100%);
-}
-
-.carousel__image.next {
-  transform: translateX(100%);
+.carousel__slide {
+  width: 400px;
 }
 
 .carousel__btn-container {
-  display: flex;
+  justify-content: center;
 }
