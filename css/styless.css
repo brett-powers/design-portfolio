@@ -107,6 +107,11 @@ a {
   transition: background 0.3s;
 }
 
+.btn--arrow-container {
+  display: flex;
+  gap: 16px;
+}
+
 .btn--primary {
   background: var(--color-black);
 }
@@ -121,11 +126,6 @@ a {
 
 .btn--secondary:hover {
   background: var(--color-summer-yellow);
-}
-
-.btn--arrow-container {
-  display: flex;
-  gap: 16px;
 }
 
 .btn--arrow {
@@ -167,4 +167,22 @@ a {
   .grid--2x4 {
     grid-template-columns: 354px 164px 164px 354px;
   }
+}
+
+/* Carousel */
+.carousel-wrapper {
+  width: 400px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s;
+}
+.carousel__slide {
+  width: 400px;
+}
+
+.carousel__btn-container {
+  justify-content: center;
 }
