@@ -196,3 +196,23 @@ a {
 .carousel__btn-container {
   justify-content: center;
 }
+
+/* Hero */
+.hero {
+  text-align: center;
+}
+
+.hero__banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__logo {
+  width: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__logo {
+    width: 64px;
+  }
+}
